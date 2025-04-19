@@ -11,8 +11,6 @@ MIN_MAG = 3.0     # Minimum magnitude for alert
 
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN") # Reads from environment variable
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID") # Reads from environment variable
-# TOKEN = "7833414139:AAEIaMi0G3hRUqCbYtU7NgKEiDVVJ9fGyNE"
-# CHAT_ID = "8151509577"
 
 
 # --- Check if variables are set ---

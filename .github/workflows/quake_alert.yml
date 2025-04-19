@@ -4,7 +4,7 @@ name: Earthquake Alert Bot
 on:
   # Runs on a schedule (e.g., every 15 minutes)
   schedule:
-    - cron: '*/15 * * * *' # Runs at 0, 15, 30, 45 minutes past the hour
+    - cron: '*/10 * * * *' # Runs at 0, 15, 30, 45 minutes past the hour
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
