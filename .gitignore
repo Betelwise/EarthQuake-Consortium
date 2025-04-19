@@ -1,0 +1,15 @@
+# .gitignore
+
+# Folders to ignore
+
+footage/
+
+
+# Example: Ignore only the 'logs' folder at the root
+# /logs/
+
+# File types to ignore
+*.wav
+
+# Example: Ignore a 'cache' folder inside 'user_data'
+# user_data/cache/
