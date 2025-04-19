@@ -31,7 +31,7 @@ def haversine(lat1, lon1, lat2, lon2):
     return 2 * R * math.asin(math.sqrt(a))
 
 def get_quakes():
-    url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+    url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
     res = requests.get(url).json()
     recent_quakes = []
     print(f"Fetching recent earthquakes (min magnitude: {MIN_MAG}, max distance: {RADIUS_KM} km)...")
