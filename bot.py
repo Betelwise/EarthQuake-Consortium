@@ -7,8 +7,8 @@ import os
 # Make sure LAT, LON, RADIUS_KM, MIN_MAG are defined here
 MIN_MAG = 3.0 # Minimum magnitude to alert on
 RADIUS_KM = 1500.0 # Maximum distance from your location in km
-LAT = 33.755712 # Your latitude (e.g., San Francisco)
-LON = 72.773742 # Your longitude (e.g., San Francisco)
+LAT = 33.755712
+LON = 72.773742 
 
 # --- (Your haversine function) ---
 def haversine(lat1, lon1, lat2, lon2):
