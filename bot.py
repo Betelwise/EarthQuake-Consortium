@@ -23,7 +23,7 @@ def haversine(lat1, lon1, lat2, lon2):
 
 def get_quakes():
     # --- (Your get_quakes setup: url, request, error handling) ---
-    url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+    url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
     headers = { # Good practice: Identify your script
         'User-Agent': 'MyEarthquakeAlertBot/1.0 (github username: betelwise)' # Customize!
     }
