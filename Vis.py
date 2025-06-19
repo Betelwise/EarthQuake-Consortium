@@ -4,15 +4,14 @@ from obspy import UTCDateTime
 from obspy.clients.fdsn import Client
 
 # Define time range for the seismogram
-start_time = UTCDateTime("2025-04-19T06:48:10")  # Modify as needed
-duration = 5600  # Duration in seconds (2 minutes)
-
+start_time = UTCDateTime("2025-06-19T19:30:10")  # Modify as needed
+duration = 5*60*60  # Duration in seconds (2 minutes)
 
 # Station information
-network = "TJ"      # Network code
-station = "GHARM"   # Station code
+network = "II"      # Network code
+station = "JZAX"     
 location = "*"      # Location code (wildcard)
-channel = "HHZ"     # Vertical component channel (Z)
+channel = "BHZ"     # Vertical component channel (Z)
 
 # Connect to IRIS data center
 client = Client("IRIS")
@@ -52,7 +51,7 @@ try:
     ax.tick_params(axis='y', colors='white')
     
     plt.tight_layout()
-    plt.savefig(f"seismogram_{station}_{start_time.date}.png", dpi=300, facecolor='black')
+    #plt.savefig(f"seismogram_{station}_{start_time.date}.png", dpi=300, facecolor='black')
     plt.show()
     
 except Exception as e:
