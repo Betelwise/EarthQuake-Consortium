@@ -5,7 +5,7 @@ import os
 
 # --- (Your Config: LAT, LON, RADIUS_KM, MIN_MAG, TOKEN, CHAT_ID) ---
 # Make sure LAT, LON, RADIUS_KM, MIN_MAG are defined here
-MIN_MAG = 3.0 # Minimum magnitude to alert on
+MIN_MAG = 7.0 # Minimum magnitude to alert on
 RADIUS_KM = 1500.0 # Maximum distance from your location in km
 LAT = 33.755712
 LON = 72.773742 
@@ -76,7 +76,7 @@ def get_quakes():
         dist = haversine(LAT, LON, lat, lon)
 
         # Your filtering criteria
-        if mag >= MIN_MAG and dist <= RADIUS_KM:
+        if mag >= MIN_MAG or dist <= RADIUS_KM:
 
             # --- Extract More Single-Event Stats ---
             # Use .get() for safety, providing default values (None or "N/A")
